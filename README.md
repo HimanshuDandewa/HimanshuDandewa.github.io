@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Galaxy and Planets</title>
+    <title>Our Solar System</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,7 +72,7 @@
 <body>
 
     <header>
-        <h1>Our Galaxy and Planets</h1>
+        <h1>Our Solar System</h1>
     </header>
 
     <main>
@@ -84,21 +84,79 @@
             <img src="venus.jpg" alt="Venus">
             <h2>Venus</h2>
         </div>
-        <!-- Add more planets as needed -->
+        <div class="planet" onclick="showDetails('earth')">
+            <img src="earth.jpg" alt="Earth">
+            <h2>Earth</h2>
+        </div>
+        <div class="planet" onclick="showDetails('mars')">
+            <img src="mars.jpg" alt="Mars">
+            <h2>Mars</h2>
+        </div>
+        <div class="planet" onclick="showDetails('jupiter')">
+            <img src="jupiter.jpg" alt="Jupiter">
+            <h2>Jupiter</h2>
+        </div>
+        <div class="planet" onclick="showDetails('saturn')">
+            <img src="saturn.jpg" alt="Saturn">
+            <h2>Saturn</h2>
+        </div>
+        <div class="planet" onclick="showDetails('uranus')">
+            <img src="uranus.jpg" alt="Uranus">
+            <h2>Uranus</h2>
+        </div>
+        <div class="planet" onclick="showDetails('neptune')">
+            <img src="neptune.jpg" alt="Neptune">
+            <h2>Neptune</h2>
+        </div>
+        <div class="planet" onclick="showDetails('pluto')">
+            <img src="pluto.jpg" alt="Pluto">
+            <h2>Pluto</h2>
+        </div>
 
         <div id="mercury-details" class="planet-details">
             <h3>Mercury</h3>
-            <p>Mercury is the smallest and innermost planet in our solar system. It is named after the Roman god of commerce, travel, and thievery.</p>
-            <p>Distance from the Sun: 57.9 million km</p>
-            <p>Orbital Period: 88 Earth days</p>
-            <p>Surface Temperature: -173 to 427 °C</p>
+            <p>Mercury is the smallest and innermost planet in our solar system...</p>
+            <!-- Additional details go here -->
         </div>
         <div id="venus-details" class="planet-details">
             <h3>Venus</h3>
-            <p>Venus is the second planet from the Sun. It is often called the "Morning Star" or the "Evening Star" due to its brightness.</p>
-            <p>Distance from the Sun: 108.2 million km</p>
-            <p>Orbital Period: 225 Earth days</p>
-            <p>Surface Temperature: 462 °C</p>
+            <p>Venus is the second planet from the Sun. It is often called the "Morning Star"...</p>
+            <!-- Additional details go here -->
+        </div>
+        <div id="earth-details" class="planet-details">
+            <h3>Earth</h3>
+            <p>Earth is the third planet from the Sun and the only known astronomical object to support life...</p>
+            <!-- Additional details go here -->
+        </div>
+        <div id="mars-details" class="planet-details">
+            <h3>Mars</h3>
+            <p>Mars is the fourth planet from the Sun and the second smallest planet in the solar system...</p>
+            <!-- Additional details go here -->
+        </div>
+        <div id="jupiter-details" class="planet-details">
+            <h3>Jupiter</h3>
+            <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System...</p>
+            <!-- Additional details go here -->
+        </div>
+        <div id="saturn-details" class="planet-details">
+            <h3>Saturn</h3>
+            <p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System...</p>
+            <!-- Additional details go here -->
+        </div>
+        <div id="uranus-details" class="planet-details">
+            <h3>Uranus</h3>
+            <p>Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass...</p>
+            <!-- Additional details go here -->
+        </div>
+        <div id="neptune-details" class="planet-details">
+            <h3>Neptune</h3>
+            <p>Neptune is the eighth and farthest known Solar planet from the Sun. It is the fourth-largest planet by diameter and the third-largest by mass...</p>
+            <!-- Additional details go here -->
+        </div>
+        <div id="pluto-details" class="planet-details">
+            <h3>Pluto</h3>
+            <p>Pluto is a dwarf planet in our solar system. It was reclassified as a dwarf planet by the International Astronomical Union (IAU) in 2006...</p>
+            <!-- Additional details go here -->
         </div>
         <!-- Add more planet details as needed -->
     </main>
@@ -110,14 +168,3 @@
             planetDetails.forEach(detail => {
                 detail.style.display = 'none';
             });
-
-            // Show the details of the clicked planet
-            const planetDetailsToShow = document.getElementById(planet + '-details');
-            if (planetDetailsToShow) {
-                planetDetailsToShow.style.display = 'block';
-            }
-        }
-    </script>
-
-</body>
-</html>
